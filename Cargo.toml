@@ -1,0 +1,18 @@
+[package]
+name = "rapidrubik"
+version = "0.1.0"
+authors = ["Shaan Desai"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+druid = "0.7.0"
+librapidrubik = { path = "librapidrubik" }
+getrandom = { version = "0.2.3", features = ["js"] }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2.76"
