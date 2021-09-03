@@ -1,0 +1,15 @@
+{
+  "name": "rapidrubik",
+  "collaborators": [
+    "Shaan Desai"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "rapidrubik_bg.wasm",
+    "rapidrubik.js",
+    "rapidrubik.d.ts"
+  ],
+  "module": "rapidrubik.js",
+  "types": "rapidrubik.d.ts",
+  "sideEffects": false
+}
